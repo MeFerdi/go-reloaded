@@ -73,6 +73,31 @@ func applyModifications(line string) string {
 	if strings.Contains(line, "a") {
 		line = student.IsVowelorH(line)
 	}
-
+	if strings.Contains(line, "?") {
+		line = student.FormatPunctuation(line)
+	} else {
+		if strings.Contains(line, "!") {
+			line = student.FormatPunctuation(line)
+		} else {
+			if strings.Contains(line, ".") {
+				line = student.FormatPunctuation(line)
+			} else {
+				if strings.Contains(line, ",") {
+					line = student.FormatPunctuation(line)
+				} else {
+					if strings.Contains(line, ":") {
+						line = student.FormatPunctuation(line)
+					} else {
+						if strings.Contains(line, ";") {
+							line = student.FormatPunctuation(line)
+						}
+					}
+				}
+			}
+		}
+	}
+	if strings.Contains(line, "'") {
+		line = student.UniquePunctuation(line)
+	}
 	return line
 }
