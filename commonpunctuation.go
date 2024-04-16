@@ -1,7 +1,6 @@
-package main
+package student
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -28,8 +27,4 @@ func FormatPunctuation(s string) string {
 
 	}
 	return strings.Join(MyString, " ")
-}
-
-func main() {
-	fmt.Println(FormatPunctuation("Punctuation tests are ... kinda boring ,don't you think !?"))
 }
