@@ -17,7 +17,7 @@ func IsVowelorH(s string) string {
 			words[i] = "a"
 		} else {
 			if words[i] == "h" || words[i] == "H" {
-				words[i] = "h"
+				words[i] = "an"
 			}
 		}
 	}
