@@ -6,7 +6,7 @@ import (
 	"os"
 	"strings"
 
-	"student"
+	student "student/student"
 )
 
 func main() {
@@ -58,10 +58,10 @@ func applyModifications(line string) string {
 	if strings.Contains(line, "(cap") {
 		line = student.Capitalize(line)
 	}
-	if strings.Contains(line, "(up)") {
+	if strings.Contains(line, "(up") {
 		line = student.UpperCase(line)
 	}
-	if strings.Contains(line, "(low)") {
+	if strings.Contains(line, "(low") {
 		line = student.LowerCase(line)
 	}
 	if strings.Contains(line, "(hex)") {
