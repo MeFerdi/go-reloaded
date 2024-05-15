@@ -2,6 +2,8 @@ package student
 
 import (
 	"testing"
+
+	"student/student"
 )
 
 func TestCapitalize(t *testing.T) {
@@ -15,7 +17,7 @@ func TestCapitalize(t *testing.T) {
 
 	for _, tc := range testCases {
 		t.Run(tc.input, func(t *testing.T) {
-			actual := Capitalize(tc.input)
+			actual := student.Capitalize(tc.input)
 			if actual != tc.expected {
 				t.Errorf("Expected %s, but got %s", tc.expected, actual)
 			}

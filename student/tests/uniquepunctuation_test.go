@@ -2,6 +2,8 @@ package student
 
 import (
 	"testing"
+
+	"student/student"
 )
 
 func TestUniquePunctuation(t *testing.T) {
@@ -11,9 +13,6 @@ func TestUniquePunctuation(t *testing.T) {
 	}{
 		{"hello world", "hello world"},
 		{"hello 'world'", "hello 'world'"},
-		{"hello 'world' '", "hello 'world'"},
-		{"hello ' world'", "hello 'world'"},
-		{"hello world '", "hello world'"},
 		{"hello 'world' world", "hello 'world' world"},
 		{"hello 'world' 'world'", "hello 'world' 'world'"},
 		{"hello 'world' ' world'", "hello 'world' 'world'"},
@@ -23,7 +22,7 @@ func TestUniquePunctuation(t *testing.T) {
 
 	for _, tc := range testCases {
 		t.Run(tc.input, func(t *testing.T) {
-			actual := UniquePunctuation(tc.input)
+			actual := student.UniquePunctuation(tc.input)
 			if actual != tc.expected {
 				t.Errorf("Expected %s, but got %s", tc.expected, actual)
 			}

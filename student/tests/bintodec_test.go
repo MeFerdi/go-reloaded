@@ -2,6 +2,8 @@ package student
 
 import (
 	"testing"
+
+	"student/student"
 )
 
 func TestBinToDecimal(t *testing.T) {
@@ -15,7 +17,7 @@ func TestBinToDecimal(t *testing.T) {
 
 	for _, tc := range testCases {
 		t.Run(tc.input, func(t *testing.T) {
-			actual := BinToDecimal(tc.input)
+			actual := student.BinToDecimal(tc.input)
 			if actual != tc.expected {
 				t.Errorf("Expected %s, but got %s", tc.expected, actual)
 			}
