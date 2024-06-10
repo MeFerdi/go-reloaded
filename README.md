@@ -48,25 +48,26 @@ Create a new branch. Create a new branch for your changes using the git checkout
 git checkout -b your-feature-branch
 ```
 
-Replace your-feature-branch with a descriptive name for your changes.
-Make your changes. Make your changes in the new branch. Ensure that your changes follow the project's coding standards and conventions.
-Test your changes. Test your changes to ensure that they work as expected. You can use the project's existing test suite or create new tests if necessary.
-Commit your changes. Commit your changes using the git add and git commit commands.
+- Replace your-feature-branch with a descriptive name for your changes.
+- Make your changes. Make your changes in the new branch. 
+- Ensure that your changes follow the project's coding standards and conventions.
+- Test your changes. Test your changes to ensure that they work as expected. You can use the project's existing test suite or create new tests if necessary.
+- Commit your changes. Commit your changes using the git add and git commit commands.
 
 ```bash
 git add .
 git commit -m "Your commit message"
 ```
-Replace Your commit message with a descriptive message that summarizes your changes.
-Push your changes. Push your changes to your forked repository using the git push command.
+- Replace Your commit message with a descriptive message that summarizes your changes.
+- Push your changes. Push your changes to your forked repository using the git push command.
 
 ```bash
 git push origin your-feature-branch
 ```
-Replace your-feature-branch with the name of your new branch.
-Create a pull request. Create a pull request from your forked repository to the original repository. Provide a detailed description of your changes and why they are necessary.
-Review and merge. The project maintainers will review your changes and provide feedback. Once your changes are approved, they will be merged into the main project.
-Pull the latest changes. After your changes are merged, pull the latest changes from the main project using the git pull command.
+- Replace your-feature-branch with the name of your new branch.
+- Create a pull request. Create a pull request from your forked repository to the original repository. Provide a detailed description of your changes and why they are necessary.
+- Review and merge. The project maintainers will review your changes and provide feedback. Once your changes are approved, they will be merged into the main project.
+- Pull the latest changes. After your changes are merged, pull the latest changes from the main project using the git pull command.
 
 ```bash
 git pull origin main
