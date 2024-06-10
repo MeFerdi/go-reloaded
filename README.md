@@ -1,4 +1,4 @@
-# Project: Text Modification Tool
+# Project: Text Modification Tool(Simple Grammarly)
 Welcome to the Text Modification Tool project! This tool allows you to make various modifications to text files based on specific rules. You can perform operations like converting numbers between different bases, changing letter cases, handling punctuation, and more.
 ### Features
 
